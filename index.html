@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CS:GO Float Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>CS:GO Float Calculator</h1>
+  
+  <div class="container">
+    <form onsubmit="event.preventDefault(); calculateCondition();">
+      <label for="float-value">Enter the float value of the weapon:</label>
+      <input type="text" id="float-value" value="0." onkeydown="preventRemoval(event)" oninput="validateInput(event)" onpaste="return false">
+      <button onclick="calculateCondition()">Calculate</button>
+    </form>
+    <p id="result"></p>
+  </div>
+</body>
+</html>
